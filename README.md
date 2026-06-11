@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# CTDS Workforce Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+The CTDS Workforce Management System is a web-based application developed to streamline employee management processes within an organization. The system helps manage attendance, leave requests, task assignments, KPI monitoring, and notifications through a centralized platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Objectives
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Simplify workforce management operations
+* Improve employee productivity tracking
+* Enable efficient attendance and leave management
+* Provide task monitoring and KPI evaluation
+* Enhance communication through notifications
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Employee Module
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Employee Dashboard
+* Attendance Management
+* Leave Request Submission
+* Task Tracking
+* KPI Monitoring
+* Notifications
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Admin Module
+
+* User Management
+* Attendance Monitoring
+* Leave Approval System
+* Task Assignment
+* Analytics Dashboard
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* Shadcn UI
+
+### Development Tools
+
+* Git
+* GitHub
+* Visual Studio Code
+* Antigravity IDE
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+├── services/
+└── App.jsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
+
+---
+
+## Future Enhancements
+
+* Role-Based Access Control
+* Performance Analytics
+* Email Notifications
+* Report Generation
+* Mobile Responsive Design
+
+---
+
+## Author
+
+**Salma Dariya**
+
+B.Tech Computer Science Engineering Student
+
+GitHub: https://github.com/salmadariya
+
+---
+
+## Status
+
+🚧 Project Under Development
